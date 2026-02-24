@@ -1,1 +1,11 @@
+import requests
 
+url = "https://financialmodelingprep.com/stable/search-symbol?query=AAPL&apikey=ujNrC7HZHGpbGGAzjhdKyTq1uLjVaJXJ"          #It asks a website (an API) for data, gets the data back in JSON format, 
+response = requests.get(url)                                #converts it into Python data, and prints the first 5 post titles.
+
+print(response)              # Shows the Response object
+json_data = response.json()  # Converts response directly into Python objects
+
+
+print(type(json_data))   # tells you if it's a list or dict
+print(json_data)         # shows you the raw structure
