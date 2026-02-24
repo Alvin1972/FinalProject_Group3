@@ -37,4 +37,5 @@ print(json_data)         # shows you the raw structure
 #except requests.exceptions.RequestException as e:
   #  print(f"Request failed: {e}")
 #except ValueError as e:
+
  #   print(f"JSON decoding failed: {e}")
